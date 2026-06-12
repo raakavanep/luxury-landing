@@ -12,11 +12,30 @@ export default function ContactPage() {
     message: ''
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    alert('Thank you for your interest! We will contact you soon.')
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault()
+
+  try {
+    await fetch(process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL!, {
+      method: "POST",
+      mode: "no-cors",
+      body: JSON.stringify(formData),
+    })
+
+    alert("Registration submitted successfully!")
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      category: "",
+      message: "",
+    })
+  } catch (error) {
+    console.error(error)
+    alert("Failed to submit form")
   }
+}
 
   return (
     <div className="min-h-screen bg-black pt-24">
@@ -127,8 +146,6 @@ export default function ContactPage() {
                       <option value="" className="bg-black">Select a category</option>
                       <option value="prince" className="bg-black">Prince of South India</option>
                       <option value="princess" className="bg-black">Princess of South India</option>
-                      <option value="teen" className="bg-black">Teen Prince/Princess</option>
-                      <option value="classic" className="bg-black">Classic Prince/Princess</option>
                     </select>
                   </div>
 
@@ -196,7 +213,7 @@ export default function ContactPage() {
                       className="text-white/60"
                       style={{ fontFamily: 'var(--font-cormorant), serif' }}
                     >
-                      info@pposi2026.com
+                      craftandframeproduction@gmail.com
                     </p>
                   </div>
                 </div>
@@ -214,8 +231,8 @@ export default function ContactPage() {
                       className="text-white/60"
                       style={{ fontFamily: 'var(--font-cormorant), serif' }}
                     >
-                      +91 XXXXX XXXXX
-                    </p>
+                      +91 91761 74442
+                    </p>                              
                   </div>
                 </div>
 
@@ -232,7 +249,7 @@ export default function ContactPage() {
                       className="text-white/60"
                       style={{ fontFamily: 'var(--font-cormorant), serif' }}
                     >
-                      South India
+                      Chennai
                     </p>
                   </div>
                 </div>
