@@ -11,6 +11,7 @@ const navItems = [
   { href: '/the-crown', label: 'THE CROWN' },
   { href: '/categories', label: 'CATEGORIES' },
   { href: '/jury', label: 'JURY' },
+  { href: '/our-team', label: 'OUR TEAM' },
   { href: '/schedule', label: 'SCHEDULE' },
   { href: '/contact', label: 'CONTACT' },
 ]
@@ -35,7 +36,7 @@ export function Navbar() {
     PPOSI
   </Link>
           {/* Desktop Navigation */}
-          <ul className="hidden lg:flex items-center gap-8 xl:gap-12">
+          <ul className="hidden lg:flex items-center gap-5 xl:gap-6">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link

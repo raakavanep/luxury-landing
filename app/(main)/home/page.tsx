@@ -35,8 +35,7 @@ export default function HomePage() {
 
 
       {/* ================= MAIN CONTENT ================= */}
-<div className="relative z-20 flex min-h-screen flex-col items-center justify-center text-center px-6 pt-44 md:pt-28 pb-10">        {/* CROWN */}
-        <div className="flex items-center gap-6 mt-10 md:mt-0">
+<div className="relative z-20 flex min-h-screen flex-col items-center justify-center text-center px-6 pt-20 md:pt-28 pb-10">        <div className="flex items-center gap-6 mt-10 md:mt-0">
 
           <div className="hidden md:block w-24 h-[1px] bg-[#d4af37]" />
 
@@ -65,7 +64,7 @@ export default function HomePage() {
 
         {/* MAIN TITLE */}
         <h1
-          className="mt-3 text-[#d4af37] text-[50px] md:text-[82px] leading-[0.9]"
+          className="mt-3 text-[#d4af37] text-[42px] md:text-[82px] leading-[0.9]"
           style={{
             fontFamily: "serif",
             fontWeight: "700",
@@ -86,7 +85,7 @@ export default function HomePage() {
           <div className="w-12 md:w-28 h-[1px] bg-[#d4af37]" />
 
           <p
-            className="text-[#d4af37] tracking-[0.25em] text-sm md:text-[34px]"
+            className="text-[#d4af37] tracking-[0.25em] text-[12px] md:text-[34px]"
             style={{
               fontFamily: "serif",
               textShadow: "0 0 12px rgba(212,175,55,0.35)",
@@ -101,7 +100,7 @@ export default function HomePage() {
 
         {/* YEAR */}
         <h2
-          className="mt-4 text-[#d4af37] text-[80px] md:text-[125px] leading-none"
+          className="mt-4 text-[#d4af37] text-[65px] md:text-[125px] leading-none"
           style={{
             fontFamily: "serif",
             textShadow: `
@@ -117,7 +116,7 @@ export default function HomePage() {
         <div className="relative mt-5">
 
           <div
-            className="border border-[#d4af37] px-10 md:px-20 py-4 text-[#d4af37] tracking-[0.18em] text-sm md:text-[22px]"
+            className="border border-[#d4af37] px-10 md:px-20 py-4 text-[#d4af37] tracking-[0.18em] text-[11px] md:text-[22px]"
             style={{
               fontFamily: "serif",
               textShadow: "0 0 10px rgba(212,175,55,0.35)",
@@ -130,7 +129,7 @@ export default function HomePage() {
 
         {/* CENTER PRODUCTION */}
         <p
-          className="mt-7 text-[#d4af37] text-lg md:text-[34px] tracking-[0.10em]"
+          className="mt-7 text-[#d4af37] text-[16px] md:text-[34px] tracking-[0.10em]"
           style={{
             fontFamily: "serif",
             textShadow: "0 0 14px rgba(212,175,55,0.35)",
@@ -141,7 +140,7 @@ export default function HomePage() {
 
         {/* BOTTOM TEXT */}
         <p
-          className="mt-8 text-white text-sm md:text-[28px] tracking-[0.22em]"
+          className="mt-8 text-white text-[11px] md:text-[28px] tracking-[0.22em]"
           style={{
             fontFamily: "serif",
             textShadow: "0 0 8px rgba(255,255,255,0.3)",
