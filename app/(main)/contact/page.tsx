@@ -16,12 +16,14 @@ export default function ContactPage() {
   e.preventDefault()
 
   try {
-    await fetch(process.env.NEXT_PUBLIC_GOOGLE_SCRIPT_URL!, {
-      method: "POST",
-      mode: "no-cors",
-      body: JSON.stringify(formData),
-    })
-
+    await fetch(
+  "https://script.google.com/macros/s/AKfycbxm7fJEVqQrAxSPwJio-9GXw1Cc8YhTMBVsM0RFq_XfedWfMFT_lAQsb_PGMqiuoRHe-Q/exec",
+  {
+    method: "POST",
+    mode: "no-cors",
+    body: JSON.stringify(formData),
+  }
+)
     alert("Registration submitted successfully!")
 
     setFormData({
