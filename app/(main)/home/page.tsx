@@ -26,7 +26,7 @@ export default function HomePage() {
         alt="Mobile Background"
         fill
         priority
-        className="block md:hidden object-cover"
+        className="block md:hidden object-content"
       />
 
       {/* OVERLAY */}
@@ -164,59 +164,6 @@ export default function HomePage() {
 
       </div>
 
-      {/* LEFT SHIELD TEXT */}
-      <div
-        className="hidden md:flex absolute bottom-[148px] left-[92px] z-30 flex-col items-center justify-center w-[150px]"
-      >
-
-        <p
-          className="text-[#d4af37] text-[16px] leading-[1.1] tracking-[0.08em] text-center"
-          style={{
-            fontFamily: "serif",
-            textShadow: "0 0 12px rgba(212,175,55,0.45)",
-          }}
-        >
-          CRAFT & FRAME
-        </p>
-
-        <p
-          className="text-[#d4af37] text-[16px] leading-[1.1] tracking-[0.08em] text-center"
-          style={{
-            fontFamily: "serif",
-            textShadow: "0 0 12px rgba(212,175,55,0.45)",
-          }}
-        >
-          PRODUCTION
-        </p>
-
-      </div>
-
-      {/* RIGHT SHIELD TEXT */}
-      <div
-        className="hidden md:flex absolute bottom-[148px] right-[92px] z-30 flex-col items-center justify-center w-[150px]"
-      >
-
-        <p
-          className="text-[#d4af37] text-[16px] leading-[1.1] tracking-[0.08em] text-center"
-          style={{
-            fontFamily: "serif",
-            textShadow: "0 0 12px rgba(212,175,55,0.45)",
-          }}
-        >
-          CRAFT & FRAME
-        </p>
-
-        <p
-          className="text-[#d4af37] text-[16px] leading-[1.1] tracking-[0.08em] text-center"
-          style={{
-            fontFamily: "serif",
-            textShadow: "0 0 12px rgba(212,175,55,0.45)",
-          }}
-        >
-          PRODUCTION
-        </p>
-
-      </div>
 
     </main>
   );

@@ -30,13 +30,13 @@ export function Navbar() {
            {/* PPOSI Logo */}
   <Link
     href="/"
-    className="hidden lg:block absolute left-0 text-[#d4af37] text-3xl tracking-[0.25em]"
+    className="hidden xl:block absolute left-0 text-[#d4af37] text-3xl tracking-[0.25em]"
     style={{ fontFamily: "serif" }}
   >
     PPOSI
   </Link>
           {/* Desktop Navigation */}
-          <ul className="hidden lg:flex items-center gap-5 xl:gap-6">
+          <ul className="hidden xl:flex items-center gap-4 2xl:gap-6">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link
@@ -59,7 +59,7 @@ export function Navbar() {
           {/* Register Button - Desktop */}
           <Link
             href="/contact"
-            className="hidden lg:block absolute right-0 px-5 py-2 border border-[#d4af37] text-[#d4af37] text-xs xl:text-sm tracking-[0.15em] font-normal hover:bg-[#d4af37] hover:text-black transition-all duration-300"
+            className="hidden xl:block absolute right-0 px-4 py-2 border border-[#d4af37] text-[#d4af37] text-xs xl:text-sm tracking-[0.15em] font-normal hover:bg-[#d4af37] hover:text-black transition-all duration-300"
           >
             REGISTER NOW
           </Link>
