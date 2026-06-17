@@ -66,7 +66,7 @@ export function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="lg:hidden text-[#d4af37] p-2 ml-auto"
+            className="xl:hidden text-[#d4af37] p-2 ml-auto"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -76,7 +76,7 @@ export function Navbar() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div className="lg:hidden mt-4 pb-4 border-t border-[#d4af37]/20 pt-4">
+          <div className="xl:hidden mt-4 pb-4 border-t border-[#d4af37]/20 pt-4">
             <ul className="flex flex-col gap-4">
               {navItems.map((item) => (
                 <li key={item.href}>
