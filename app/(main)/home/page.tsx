@@ -13,12 +13,36 @@ export default function HomePage() {
 
       {/* DESKTOP BACKGROUND */}
       <Image
-        src="/images/home-bg.png"
-        alt="Background"
-        fill
-        priority
-        className="hidden md:block object-cover"
-      />
+  src="/images/background.png"
+  alt="Background"
+  fill
+  priority
+  className="object-cover"
+/>
+
+<div className="absolute inset-0 bg-black/20 z-0" />
+
+{/* LEFT TROPHY */}
+<div className="hidden lg:block absolute left-[1%] bottom-0 z-10">
+  <Image
+    src="/images/left-trophy.png"
+    alt="Left Trophy"
+    width={400}
+    height={900}
+    className="w-[180px] xl:w-[260px] 2xl:w-[320px] h-auto"
+  />
+</div>
+
+{/* RIGHT TROPHY */}
+<div className="hidden lg:block absolute right-[1%] bottom-0 z-10">
+  <Image
+    src="/images/right-trophy.png"
+    alt="Right Trophy"
+    width={400}
+    height={900}
+    className="w-[180px] xl:w-[260px] 2xl:w-[320px] h-auto"
+  />
+</div>
 
       {/* MOBILE BACKGROUND */}
       <Image
