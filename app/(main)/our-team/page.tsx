@@ -44,12 +44,12 @@ export default function OurTeamPage() {
             <div className="space-y-6 text-white/80 leading-8 text-justify">
 
               <p>
-                Raakavan is a Chennai-based filmmaker, author, and event producer
+                Raakavan is a Chennai-based filmmaker, author, and executive flim producer
                 with nearly a decade of experience spanning independent film,
                 live events, and talent management. Before stepping fully into
                 the creative industry, he built a foundation in finance and BPO
                 operations — a background that now shapes the disciplined,
-                business-savvy approach he brings to every CFP production.
+                business-savvy approach he brings to every CFP.
               </p>
 
               <p>

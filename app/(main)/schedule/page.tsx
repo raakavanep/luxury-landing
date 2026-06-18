@@ -10,7 +10,7 @@ const scheduleItems = [
   {
     date: 'FEBRUARY 2026',
     title: 'AUDITION ROUNDS',
-    description: 'City-wise auditions across South India',
+    description: 'Audition Round',
     time: 'Multiple Dates'
   },
   {
@@ -22,7 +22,7 @@ const scheduleItems = [
   {
     date: 'APRIL 2026',
     title: 'SEMI-FINALS',
-    description: 'State-level competitions and eliminations',
+    description: '',
     time: 'Venue TBA'
   },
   {

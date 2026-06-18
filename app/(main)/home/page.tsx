@@ -23,25 +23,23 @@ export default function HomePage() {
 <div className="absolute inset-0 bg-black/20 z-0" />
 
 {/* LEFT TROPHY */}
-<div className="hidden lg:block absolute left-[1%] bottom-0 z-10">
+<div className="hidden md:block absolute left-[1%] bottom-0 z-10">
   <Image
     src="/images/left-trophy.png"
     alt="Left Trophy"
     width={400}
     height={900}
-    className="w-[180px] xl:w-[260px] 2xl:w-[320px] h-auto"
-  />
+className="w-[300px] xl:w-[400px] 2xl:w-[500px] h-auto"  />
 </div>
 
 {/* RIGHT TROPHY */}
-<div className="hidden lg:block absolute right-[1%] bottom-0 z-10">
+<div className="hidden md:block absolute right-[1%] bottom-0 z-10">
   <Image
     src="/images/right-trophy.png"
     alt="Right Trophy"
     width={400}
     height={900}
-    className="w-[180px] xl:w-[260px] 2xl:w-[320px] h-auto"
-  />
+className="w-[300px] xl:w-[400px] 2xl:w-[500px] h-auto"  />
 </div>
 
       {/* MOBILE BACKGROUND */}
@@ -95,7 +93,7 @@ export default function HomePage() {
             textShadow: `
               0 0 5px rgba(255,215,0,0.9),
               0 0 14px rgba(212,175,55,0.7),
-              0 0 28px rgba(212,175,55,0.45)
+             
             `,
           }}
         >
@@ -129,7 +127,7 @@ export default function HomePage() {
             fontFamily: "serif",
             textShadow: `
               0 0 8px rgba(255,215,0,0.7),
-              0 0 20px rgba(212,175,55,0.5)
+             
             `,
           }}
         >

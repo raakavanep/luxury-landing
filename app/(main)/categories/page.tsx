@@ -65,12 +65,24 @@ export default function CategoriesPage() {
           >
             Official Titles
           </p>
-          <h1 
-            className="text-5xl md:text-7xl tracking-[0.2em] text-[#d4af37] gold-glow-strong mb-6"
-            style={{ fontFamily: 'var(--font-cinzel), serif' }}
-          >
-            CATEGORIES
-          </h1>
+          <h1
+  className="
+    text-[#d4af37]
+    text-[40px]
+    sm:text-[55px]
+    md:text-[70px]
+    lg:text-[90px]
+    tracking-[0.08em]
+    text-center
+    break-words
+  "
+  style={{
+  fontFamily: "serif",
+  textShadow: "0 0 6px rgba(212,175,55,0.2)",
+}}
+>
+  CATEGORIES
+</h1>
           <div className="flex items-center justify-center gap-4 mb-8">
             <div className="w-16 h-[1px] bg-gradient-to-r from-transparent to-[#d4af37]" />
             <div className="w-2 h-2 rotate-45 border border-[#d4af37]" />
