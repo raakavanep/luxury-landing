@@ -57,12 +57,14 @@ export function Navbar() {
           </ul>
 
           {/* Register Button - Desktop */}
-          <Link
-            href="/contact"
-            className="hidden xl:block absolute right-0 px-4 py-2 border border-[#d4af37] text-[#d4af37] text-xs xl:text-sm tracking-[0.15em] font-normal hover:bg-[#d4af37] hover:text-black transition-all duration-300"
-          >
-            REGISTER NOW
-          </Link>
+          <a
+  href="https://forms.gle/YOUR_GOOGLE_FORM_LINK"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="hidden xl:block absolute right-0 px-4 py-2 border border-[#d4af37] text-[#d4af37] text-xs xl:text-sm tracking-[0.15em] font-normal hover:bg-[#d4af37] hover:text-black transition-all duration-300"
+>
+  REGISTER NOW
+</a>
 
           {/* Mobile Menu Button */}
           <button
@@ -94,13 +96,15 @@ export function Navbar() {
                 </li>
               ))}
               <li className="mt-4">
-                <Link
-                  href="/contact"
-                  className="inline-block px-5 py-2 border border-[#d4af37] text-[#d4af37] text-sm tracking-[0.15em] font-normal hover:bg-[#d4af37] hover:text-black transition-all duration-300"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  REGISTER NOW
-                </Link>
+                <a
+  href="https://forms.gle/YOUR_GOOGLE_FORM_LINK"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block px-5 py-2 border border-[#d4af37] text-[#d4af37] text-sm tracking-[0.15em] font-normal hover:bg-[#d4af37] hover:text-black transition-all duration-300"
+  onClick={() => setMobileMenuOpen(false)}
+>
+  REGISTER NOW
+</a>
               </li>
             </ul>
           </div>

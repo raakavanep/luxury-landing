@@ -5,12 +5,12 @@ import { Crown, Mail, Phone, MapPin, Send } from 'lucide-react'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    category: '',
-    message: ''
-  })
+  name: '',
+  email: '',
+  phone: '',
+  subject: '',
+  message: ''
+})
 
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault()
@@ -27,12 +27,12 @@ export default function ContactPage() {
     alert("Registration submitted successfully!")
 
     setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      category: "",
-      message: "",
-    })
+  name: "",
+  email: "",
+  phone: "",
+  subject: "",
+  message: "",
+})
   } catch (error) {
     console.error(error)
     alert("Failed to submit form")
@@ -73,7 +73,7 @@ export default function ContactPage() {
                   className="text-2xl tracking-[0.1em] text-[#d4af37] mb-8"
                   style={{ fontFamily: 'var(--font-cinzel), serif' }}
                 >
-                  REGISTER YOUR INTEREST
+                  LEAVE A MESSAGE
                 </h2>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -132,24 +132,25 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label 
-                      className="block text-sm tracking-[0.15em] text-white/60 mb-2"
-                      style={{ fontFamily: 'var(--font-cormorant), serif' }}
-                    >
-                      CATEGORY OF INTEREST
-                    </label>
-                    <select
-                      value={formData.category}
-                      onChange={(e) => setFormData({...formData, category: e.target.value})}
-                      className="w-full px-4 py-3 bg-black/50 border border-[#d4af37]/30 text-white focus:border-[#d4af37] focus:outline-none transition-colors"
-                      style={{ fontFamily: 'var(--font-cormorant), serif' }}
-                      required
-                    >
-                      <option value="" className="bg-black">Select a category</option>
-                      <option value="prince" className="bg-black">Prince of South India</option>
-                      <option value="princess" className="bg-black">Princess of South India</option>
-                    </select>
-                  </div>
+  <label
+    className="block text-sm tracking-[0.15em] text-white/60 mb-2"
+    style={{ fontFamily: 'var(--font-cormorant), serif' }}
+  >
+    SUBJECT
+  </label>
+
+  <input
+    type="text"
+    value={formData.subject}
+    onChange={(e) =>
+      setFormData({ ...formData, subject: e.target.value })
+    }
+    className="w-full px-4 py-3 bg-black/50 border border-[#d4af37]/30 text-white placeholder-white/30 focus:border-[#d4af37] focus:outline-none transition-colors"
+    style={{ fontFamily: 'var(--font-cormorant), serif' }}
+    placeholder="Enter subject"
+    required
+  />
+</div>
 
                   <div>
                     <label 
@@ -173,7 +174,7 @@ export default function ContactPage() {
                     className="w-full flex items-center justify-center gap-3 px-8 py-4 border border-[#d4af37] text-[#d4af37] tracking-[0.15em] hover:bg-[#d4af37]/10 transition-all duration-300 luxury-button"
                     style={{ fontFamily: 'var(--font-cinzel), serif' }}
                   >
-                    SUBMIT APPLICATION
+                    SEND MESSAGE
                     <Send className="w-4 h-4" />
                   </button>
                 </form>
@@ -190,7 +191,7 @@ export default function ContactPage() {
                   className="text-2xl tracking-[0.1em] text-[#d4af37] mb-8"
                   style={{ fontFamily: 'var(--font-cinzel), serif' }}
                 >
-                  GET IN TOUCH
+                  CONTACT US
                 </h2>
                 <p 
                   className="text-white/60 leading-relaxed mb-8"
@@ -200,25 +201,25 @@ export default function ContactPage() {
                   Our team is here to assist you on your journey to the crown.
                 </p>
               </div>
+<div className="space-y-6">
+              <div className="flex items-start gap-4 p-6 border border-[#d4af37]/20 bg-black/30">
+  <Mail className="w-6 h-6 text-[#d4af37] mt-1" strokeWidth={1} />
+  <div>
+    <h3
+      className="text-sm tracking-[0.15em] text-[#d4af37] mb-2"
+      style={{ fontFamily: 'var(--font-cinzel), serif' }}
+    >
+      EMAIL
+    </h3>
 
-              <div className="space-y-6">
-                <div className="flex items-start gap-4 p-6 border border-[#d4af37]/20 bg-black/30">
-                  <Mail className="w-6 h-6 text-[#d4af37] mt-1" strokeWidth={1} />
-                  <div>
-                    <h3 
-                      className="text-sm tracking-[0.15em] text-[#d4af37] mb-2"
-                      style={{ fontFamily: 'var(--font-cinzel), serif' }}
-                    >
-                      EMAIL
-                    </h3>
-                    <p 
-                      className="text-white/60"
-                      style={{ fontFamily: 'var(--font-cormorant), serif' }}
-                    >
-                      craftandframeproduction@gmail.com
-                    </p>
-                  </div>
-                </div>
+    <p
+      className="text-white/60"
+      style={{ fontFamily: 'var(--font-cormorant), serif' }}
+    >
+      craftandframeproduction@gmail.com
+    </p>
+  </div>
+</div>
 
                 <div className="flex items-start gap-4 p-6 border border-[#d4af37]/20 bg-black/30">
                   <Phone className="w-6 h-6 text-[#d4af37] mt-1" strokeWidth={1} />
