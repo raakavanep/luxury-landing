@@ -1,4 +1,5 @@
 import { Crown, Star, Award } from 'lucide-react'
+import Image from 'next/image'
 
 export default function AboutPage() {
   return (
@@ -57,35 +58,17 @@ export default function AboutPage() {
     {" "}Power, Pride, and Elegance of South India
   </span>
   {" "}to national and international stages, edition after edition.
+  
 </p>
-            </div>
+</div>
             <div className="relative flex items-center justify-center">
-  <div className="relative w-full max-w-[500px] aspect-square border border-[#d4af37]/30 overflow-hidden">
-
-    {/* Gold Background Glow */}
-    <div className="absolute inset-0 bg-gradient-to-br from-[#d4af37]/15 via-[#d4af37]/5 to-transparent" />
-
-    {/* Corner Borders */}
-    <div className="absolute top-6 left-6 w-12 h-12 border-l border-t border-[#d4af37]/60" />
-    <div className="absolute top-6 right-6 w-12 h-12 border-r border-t border-[#d4af37]/60" />
-    <div className="absolute bottom-6 left-6 w-12 h-12 border-l border-b border-[#d4af37]/60" />
-    <div className="absolute bottom-6 right-6 w-12 h-12 border-r border-b border-[#d4af37]/60" />
-
-    {/* Circles */}
-    <div className="absolute inset-0 flex items-center justify-center">
-      <div className="absolute w-[280px] h-[280px] rounded-full border border-[#d4af37]/15" />
-      <div className="absolute w-[220px] h-[220px] rounded-full border border-[#d4af37]/25" />
-      <div className="absolute w-[160px] h-[160px] rounded-full border border-[#d4af37]/35 bg-[#d4af37]/5" />
-    </div>
-
-    {/* Crown */}
-    <div className="absolute inset-0 flex items-center justify-center">
-      <Crown
-        className="w-24 h-24 text-[#d4af37] drop-shadow-[0_0_25px_rgba(212,175,55,0.8)]"
-        strokeWidth={1}
-      />
-    </div>
-  </div>
+  <Image
+    src="/images/vision.png"
+    alt="Our Vision"
+    width={500}
+    height={500}
+    className="w-full max-w-[500px] h-auto rounded-lg"
+  />
 </div>
           </div>
         </div>
@@ -97,29 +80,14 @@ export default function AboutPage() {
 
       {/* Left Design */}
       <div className="relative flex items-center justify-center order-2 md:order-1">
-        <div className="relative w-full max-w-[500px] aspect-square border border-[#d4af37]/30 overflow-hidden">
-
-          <div className="absolute inset-0 bg-gradient-to-br from-[#d4af37]/15 via-[#d4af37]/5 to-transparent" />
-
-          <div className="absolute top-6 left-6 w-12 h-12 border-l border-t border-[#d4af37]/60" />
-          <div className="absolute top-6 right-6 w-12 h-12 border-r border-t border-[#d4af37]/60" />
-          <div className="absolute bottom-6 left-6 w-12 h-12 border-l border-b border-[#d4af37]/60" />
-          <div className="absolute bottom-6 right-6 w-12 h-12 border-r border-b border-[#d4af37]/60" />
-
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="absolute w-[280px] h-[280px] rounded-full border border-[#d4af37]/15" />
-            <div className="absolute w-[220px] h-[220px] rounded-full border border-[#d4af37]/25" />
-            <div className="absolute w-[160px] h-[160px] rounded-full border border-[#d4af37]/35 bg-[#d4af37]/5" />
-          </div>
-
-          <div className="absolute inset-0 flex items-center justify-center">
-            <Award
-              className="w-24 h-24 text-[#d4af37] drop-shadow-[0_0_25px_rgba(212,175,55,0.8)]"
-              strokeWidth={1}
-            />
-          </div>
-        </div>
-      </div>
+  <Image
+    src="/images/mission.png"
+    alt="Our Mission"
+    width={500}
+    height={500}
+    className="w-full max-w-[500px] h-auto rounded-lg"
+  />
+</div>
 
       {/* Mission Text */}
       <div className="order-1 md:order-2">

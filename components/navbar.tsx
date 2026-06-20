@@ -10,6 +10,7 @@ const navItems = [
   { href: '/about', label: 'ABOUT' },
   { href: '/the-crown', label: 'THE CROWN' },
   { href: '/categories', label: 'CATEGORIES' },
+  { href: '/gallery', label: 'GALLERY' },
   { href: '/jury', label: 'JURY' },
   { href: '/our-team', label: 'OUR TEAM' },
   { href: '/schedule', label: 'SCHEDULE' },

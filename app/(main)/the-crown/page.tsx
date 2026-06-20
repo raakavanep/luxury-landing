@@ -1,3 +1,4 @@
+import Image from 'next/image' 
 import { Crown, Sparkles } from 'lucide-react'
 
 export default function TheCrownPage() {
@@ -36,13 +37,19 @@ export default function TheCrownPage() {
             
             {/* Center crown */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="relative">
-                <Crown className="w-48 h-48 md:w-64 md:h-64 text-[#d4af37] gold-glow-strong" strokeWidth={0.5} />
-                <Sparkles className="absolute -top-4 -right-4 w-8 h-8 text-[#d4af37]/60" />
-                <Sparkles className="absolute -bottom-4 -left-4 w-6 h-6 text-[#d4af37]/40" />
-              </div>
-            </div>
+  <div className="relative">
+    <Image
+      src="/images/crown2.png"
+      alt="Crown"
+      width={350}
+      height={350}
+      className="w-[220px] md:w-[320px] h-auto object-contain"
+    />
 
+    <Sparkles className="absolute -top-4 -right-4 w-8 h-8 text-[#d4af37]/60" />
+    <Sparkles className="absolute -bottom-4 -left-4 w-6 h-6 text-[#d4af37]/40" />
+  </div>
+</div>
             {/* Corner accents */}
             <div className="absolute top-0 left-0 w-12 h-12 border-l-2 border-t-2 border-[#d4af37]/50" />
             <div className="absolute top-0 right-0 w-12 h-12 border-r-2 border-t-2 border-[#d4af37]/50" />
