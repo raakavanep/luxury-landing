@@ -6,7 +6,9 @@ export default async function GalleryPage() {
     .select('*')
     .order('created_at', { ascending: false })
 
-  console.log(error)
+if (error) {
+  return <div>Error loading gallery</div>
+}
 
   return (
     <div className="min-h-screen bg-black pt-24">
@@ -25,7 +27,7 @@ export default async function GalleryPage() {
                   className="w-full rounded-lg"
                 />
               ) : (
-                
+
                 <video
                   controls
                   className="w-full rounded-lg"
