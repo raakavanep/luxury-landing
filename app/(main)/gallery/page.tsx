@@ -25,6 +25,7 @@ export default async function GalleryPage() {
                   className="w-full rounded-lg"
                 />
               ) : (
+                
                 <video
                   controls
                   className="w-full rounded-lg"
