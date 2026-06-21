@@ -88,7 +88,6 @@ export default function LandingPage() {
           >
             COMING IN 2026
           </h2>
-
           {/* BUTTON */}
           <Link
             href="/home"
