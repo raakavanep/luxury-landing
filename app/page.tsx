@@ -29,38 +29,6 @@ export default function LandingPage() {
         {/* ================= DESKTOP VIEW ================= */}
         <div className="hidden md:flex min-h-screen flex-col items-center justify-center px-6 text-center">
 
-          {/* RIGHT SIDE LOGO */}
-          <div className="absolute right-[9%] top-[11%] flex flex-col items-center z-20">
-
-            <Image
-              src="/images/right-logo.png"
-              alt="Right Logo"
-              width={150}
-              height={200}
-              className="object-contain"
-            />
-
-            <div
-              className="-mt-3 text-center"
-              style={{
-                fontFamily: "serif",
-                lineHeight: "1.15",
-                letterSpacing: "0.05em",
-                color: "#d4af37",
-                fontWeight: "700",
-              }}
-            >
-              <p className="text-[18px] whitespace-nowrap">
-                PRINCE & PRINCESS
-              </p>
-
-              <p className="text-[18px] whitespace-nowrap">
-                OF SOUTH INDIA
-              </p>
-            </div>
-
-          </div>
-
           {/* LOGO ROW */}
           <div className="flex items-center justify-center gap-5">
 
@@ -109,17 +77,6 @@ export default function LandingPage() {
               style={{ fontFamily: "serif" }}
             >
               SI
-            </span>
-
-            {/* Divider */}
-            <div className="mx-4 h-[125px] w-[3px] bg-[#d4af37]" />
-
-            {/* CFP */}
-            <span
-              className="text-[#d4af37] text-[120px] leading-none"
-              style={{ fontFamily: "serif" }}
-            >
-              CFP
             </span>
 
           </div>
