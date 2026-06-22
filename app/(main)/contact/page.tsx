@@ -14,10 +14,11 @@ export default function ContactPage() {
 
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault()
-
+console.log("Sending:", formData);
   try {
     await fetch(
   "https://script.google.com/macros/s/AKfycbxm7fJEVqQrAxSPwJio-9GXw1Cc8YhTMBVsM0RFq_XfedWfMFT_lAQsb_PGMqiuoRHe-Q/exec",
+  
   {
     method: "POST",
     mode: "no-cors",
@@ -216,7 +217,12 @@ export default function ContactPage() {
       className="text-white/60"
       style={{ fontFamily: 'var(--font-cormorant), serif' }}
     >
-      craftandframeproduction@gmail.com
+     <a
+  href="mailto:craftandframeproduction@gmail.com"
+  className="hover:text-[#d4af37]"
+>
+  craftandframeproduction@gmail.com
+</a>
     </p>
   </div>
 </div>
@@ -234,7 +240,12 @@ export default function ContactPage() {
                       className="text-white/60"
                       style={{ fontFamily: 'var(--font-cormorant), serif' }}
                     >
-                      +91 91761 74442
+                      <a
+  href="tel:+919787891949"
+  className="hover:text-[#d4af37]"
+>
+  +91 9787891949
+</a>
                     </p>                              
                   </div>
                 </div>
