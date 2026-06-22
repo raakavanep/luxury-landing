@@ -31,6 +31,12 @@ const bucketName = isVideo ? 'gallery-videos' : 'gallery-images'
 console.log('File Type:', file.type)
 console.log('Bucket:', bucketName)
 
+const {
+  data: { user },
+} = await supabase.auth.getUser()
+
+console.log('Logged User:', user)
+
 const { data: uploadData, error: uploadError } = await supabase.storage
   .from(bucketName)
   .upload(fileName, file)
