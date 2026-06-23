@@ -80,7 +80,6 @@ export default function LandingPage() {
             </span>
 
           </div>
-
           {/* COMING TEXT */}
           <h2
             className="mt-8 text-[#d4af37] text-[64px] tracking-[0.28em] leading-none"
