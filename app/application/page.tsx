@@ -4,6 +4,9 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 export default function ApplicationPage() {
+
+  const [submitted, setSubmitted] = useState(false)
+
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -74,7 +77,7 @@ const result = JSON.parse(text)
 
       if (result.success) {
 
-  alert('Application Submitted Successfully!')
+  setSubmitted(true)
 
   setFormData({
     firstName: '',
@@ -128,6 +131,32 @@ const progress = Math.min(
   Math.round((completedFields / totalFields) * 100),
   100
 )
+
+if (submitted) {
+  return (
+    <div className="min-h-screen bg-black flex items-center justify-center px-4">
+      <div className="border border-[#d4af37]/30 p-12 text-center max-w-2xl w-full">
+
+        <h1 className="text-[#d4af37] text-5xl mb-6">
+          APPLICATION SUBMITTED
+        </h1>
+
+        <p className="text-white/70 text-lg mb-10">
+          Thank you for registering for Prince & Princess of South India 2026.
+          Our team will review your application and contact you soon.
+        </p>
+
+        <a
+          href="/home"
+          className="inline-block border border-[#d4af37] px-10 py-4 text-[#d4af37] tracking-[0.2em] hover:bg-[#d4af37] hover:text-black transition-all duration-300"
+        >
+          HOME
+        </a>
+
+      </div>
+    </div>
+  )
+}
 
   return (
 
@@ -326,17 +355,19 @@ const progress = Math.min(
             <div className="grid md:grid-cols-2 gap-5">
 
               <select
-                name="idType"
-                value={formData.idType}
-                onChange={handleChange}
-                className="input luxury-input"
-                required
-              >
-                <option value="">Government ID Type</option>
-                <option>Aadhaar</option>
-                <option>Passport</option>
-                <option>Voter ID</option>
-              </select>
+  name="idType"
+  value={formData.idType}
+  onChange={handleChange}
+  className="input luxury-input"
+  required
+>
+  <option value="" disabled hidden>
+    Select ID
+  </option>
+  <option value="Aadhaar">Aadhaar</option>
+  <option value="Passport">Passport</option>
+  <option value="Voter ID">Voter ID</option>
+</select>
 
               <input
                 name="idNumber"

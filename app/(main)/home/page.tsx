@@ -107,14 +107,24 @@ className="w-[300px] xl:w-[400px] 2xl:w-[500px] h-auto"  />
           <div className="w-12 md:w-28 h-[1px] bg-[#d4af37]" />
 
           <p
-            className="text-[#d4af37] tracking-[0.25em] text-[12px] md:text-[34px]"
-            style={{
-              fontFamily: "serif",
-              textShadow: "0 0 12px rgba(212,175,55,0.35)",
-            }}
-          >
-            OF SOUTH INDIA
-          </p>
+  className="text-[#d4af37] tracking-[0.25em] text-[12px] md:text-[34px]"
+  style={{
+    fontFamily: "serif",
+    textShadow: "0 0 12px rgba(212,175,55,0.35)",
+  }}
+>
+  OF SOUTH INDIA
+  <span
+    style={{
+      letterSpacing: "normal",
+      fontSize: "32px",
+      verticalAlign: "super",
+      marginLeft: "2px"
+    }}
+  >
+    ®
+  </span>
+</p>
 
           <div className="w-12 md:w-28 h-[1px] bg-[#d4af37]" />
 
