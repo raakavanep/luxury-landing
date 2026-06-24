@@ -151,16 +151,7 @@ export default function LandingPage() {
       SI
     </span>
 
-    {/* Divider */}
-    <div className="mx-2 h-[38px] w-[2px] bg-[#d4af37]" />
-
-    {/* CFP */}
-    <span
-      className="text-[#d4af37] text-[44px] leading-none"
-      style={{ fontFamily: "serif" }}
-    >
-      CFP
-    </span>
+    
 
   </div>
 
