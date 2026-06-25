@@ -13,7 +13,6 @@ const navItems = [
   { href: '/gallery', label: 'GALLERY' },
   { href: '/jury', label: 'JURY' },
   { href: '/our-team', label: 'OUR TEAM' },
-  { href: '/schedule', label: 'SCHEDULE' },
   { href: '/contact', label: 'CONTACT' },
 ]
 
