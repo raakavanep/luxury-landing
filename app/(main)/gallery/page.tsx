@@ -19,23 +19,41 @@ if (error) {
 
         <div className="grid md:grid-cols-3 gap-6">
           {data?.map((item) => (
-            <div key={item.id}>
-              {item.media_type === 'image' ? (
-                <img
-                  src={item.media_url}
-                  alt={item.title}
-                  className="w-full rounded-lg"
-                />
-              ) : (
+            <div
+  key={item.id}
+  className="group overflow-hidden rounded-2xl border border-[#d4af37]/30 bg-[#111]"
+>
+  <div className="relative aspect-[4/5] overflow-hidden">
 
-                <video
-                  controls
-                  className="w-full rounded-lg"
-                >
-                  <source src={item.media_url} />
-                </video>
-              )}
-            </div>
+    {item.media_type === "image" ? (
+      <img
+        src={item.media_url}
+        alt={item.title}
+        className="w-full h-full object-cover transition duration-500 group-hover:scale-110"
+      />
+    ) : (
+      <video
+        controls
+        className="w-full h-full object-cover"
+      >
+        <source src={item.media_url} />
+      </video>
+    )}
+
+  </div>
+
+  <div className="p-4">
+    <h3 className="text-[#d4af37] text-lg font-semibold">
+      {item.title}
+    </h3>
+
+    {item.description && (
+      <p className="text-gray-400 text-sm mt-2">
+        {item.description}
+      </p>
+    )}
+  </div>
+</div>
           ))}
         </div>
       </div>
