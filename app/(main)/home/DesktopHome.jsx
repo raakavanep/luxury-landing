@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-
+import Link from "next/link";
 export default function DesktopHome() {
   return (
     <main className="relative hidden md:block min-h-screen w-full overflow-hidden bg-black">
@@ -125,21 +125,21 @@ export default function DesktopHome() {
         >
           2026
         </h2>
-
-        {/* Inaugural Edition */}
-        <div className="relative mt-5">
-
-          <div
-            className="border border-[#d4af37] px-20 py-4 text-[#d4af37] tracking-[0.18em] text-[22px]"
-            style={{
-              fontFamily: "serif",
-              textShadow: "0 0 10px rgba(212,175,55,0.35)",
-            }}
-          >
-            INAUGURAL EDITION
-          </div>
-
-        </div>
+{/* Register Now Button */}
+<div className="mt-6">
+  <Link href="/application">
+    <button
+      className="border border-[#d4af37] px-20 py-4 text-[#d4af37] text-[22px] tracking-[0.18em]
+      hover:bg-[#d4af37] hover:text-black transition-all duration-300"
+      style={{
+        fontFamily: "serif",
+        textShadow: "0 0 10px rgba(212,175,55,0.35)",
+      }}
+    >
+      REGISTER NOW
+    </button>
+  </Link>
+</div>
 
         {/* Production */}
         <p

@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+import Link from "next/link";
+
 export default function MobileHome() {
   return (
     <main className="relative md:hidden h-screen overflow-hidden bg-black">
@@ -69,15 +71,15 @@ export default function MobileHome() {
           2026
         </h2>
 
-        {/* Edition */}
-        <div className="mt-5 border border-[#d4af37] px-8 py-2">
-          <p
-            className="text-[#d4af37] text-xs tracking-[0.2em]"
-            style={{ fontFamily: "serif" }}
-          >
-            INAUGURAL EDITION
-          </p>
-        </div>
+        {/* Register Button */}
+<div className="mt-5">
+  <Link
+    href="/application"
+    className="inline-block border border-[#d4af37] px-8 py-2 text-[#d4af37] text-xs tracking-[0.2em] transition-all duration-300 hover:bg-[#d4af37] hover:text-black"
+  >
+    REGISTER NOW
+  </Link>
+</div>
 
         {/* Production */}
         <p

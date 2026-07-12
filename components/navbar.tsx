@@ -29,7 +29,7 @@ export function Navbar() {
 
            {/* PPOSI Logo */}
   <Link
-    href="/"
+    href="/application"
     className="hidden xl:block absolute left-0 text-[#d4af37] text-3xl tracking-[0.25em]"
     style={{ fontFamily: "serif" }}
   >
@@ -58,7 +58,7 @@ export function Navbar() {
 
           {/* Register Button - Desktop */}
           <Link
-  href=""
+  href="/application"
   className="hidden xl:block absolute right-0 px-4 py-2 border border-[#d4af37] text-[#d4af37] text-xs xl:text-sm tracking-[0.15em] font-normal hover:bg-[#d4af37] hover:text-black transition-all duration-300"
 >
   REGISTER NOW

@@ -16,28 +16,35 @@ const mainTitles = [
 ]
 
 const subTitles = [
-  {
-    icon: Palette,
-    title: 'BEST TRADITIONAL WEAR',
-    description: 'Celebrating the rich heritage and exquisite styling of South Indian traditional attire.',
-  },
-  {
-    icon: Mic,
-    title: 'BEST TALENT',
-    description: 'Showcasing extraordinary abilities in performing arts, music, dance, and creative expression.',
-  },
-  {
-    icon: Heart,
-    title: "PEOPLE'S CHOICE",
-    description: 'The prestigious title determined by public voting and audience appreciation.',
-  },
-  {
-    icon: Award,
-    title: 'BEST SWIMWEAR',
-    description: 'Recognizing confidence, fitness, and elegance in swimwear presentation.',
-  },
-]
+  { icon: Crown, title: "PRINCE OF TAMIL NADU", description: "State Winner Title" },
+  { icon: Crown, title: "PRINCE OF KERALA", description: "State Winner Title" },
+  { icon: Crown, title: "PRINCE OF KARNATAKA", description: "State Winner Title" },
+  { icon: Crown, title: "PRINCE OF ANDHRA PRADESH", description: "State Winner Title" },
+  { icon: Crown, title: "PRINCE OF TELANGANA", description: "State Winner Title" },
 
+  { icon: Crown, title: "PRINCESS OF TAMIL NADU", description: "State Winner Title" },
+  { icon: Crown, title: "PRINCESS OF KERALA", description: "State Winner Title" },
+  { icon: Crown, title: "PRINCESS OF KARNATAKA", description: "State Winner Title" },
+  { icon: Crown, title: "PRINCESS OF ANDHRA PRADESH", description: "State Winner Title" },
+  { icon: Crown, title: "PRINCESS OF TELANGANA", description: "State Winner Title" },
+
+  { icon: Award, title: "BEST FACE OF THE YEAR", description: "Award for outstanding facial beauty and elegance." },
+  { icon: Award, title: "BEST FACE OF SOUTH INDIA", description: "Recognizing the most captivating face across South India." },
+  { icon: Sparkles, title: "GLOW OF THE YEAR", description: "Awarded for radiant beauty and confidence." },
+  { icon: Sparkles, title: "MOST PHOTOGENIC", description: "Recognizing exceptional camera presence." },
+  { icon: Heart, title: "STYLE ICON", description: "Awarded for outstanding fashion sense and elegance." },
+  { icon: Award, title: "FITNESS ICON", description: "Celebrating dedication to health and fitness." },
+  { icon: Award, title: "BEST PHYSIQUE", description: "Recognizing exceptional physique and fitness." },
+  { icon: Heart, title: "BEST SMILE", description: "Awarded for the most charming smile." },
+
+  { icon: Palette, title: "BEST TRADITIONAL WEAR", description: "Celebrating the rich heritage and styling of South Indian attire." },
+  { icon: Mic, title: "BEST TALENT", description: "Recognizing extraordinary performance skills." },
+  { icon: Heart, title: "PEOPLE'S CHOICE", description: "Chosen by audience voting." },
+  { icon: Award, title: "BEST SWIMWEAR", description: "Recognizing confidence and elegance." },
+
+ 
+ 
+]
 export default function CategoriesPage() {
   return (
     <div className="min-h-screen bg-black">

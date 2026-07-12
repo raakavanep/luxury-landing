@@ -1,9 +1,13 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
+import { ArrowLeft } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 export default function ApplicationPage() {
+
+  const router = useRouter()
 
   const [submitted, setSubmitted] = useState(false)
 
@@ -179,6 +183,16 @@ if (submitted) {
     
     <div className="bg-black min-h-screen text-white pt-32 pb-20 px-4">
 <div className="relative z-20 form-card max-w-5xl mx-auto border border-[#d4af37]/30 p-8 md:p-12">
+<div className="mb-6">
+  <button
+    type="button"
+    onClick={() => router.back()}
+    className="flex items-center gap-2 text-[#d4af37] hover:text-white transition-colors"
+  >
+    <ArrowLeft size={20} />
+    <span className="tracking-[0.15em]">BACK</span>
+  </button>
+</div>
         <h1 className="gold-title text-5xl">
   PPOSI 2026 APPLICATION
 </h1>
@@ -497,19 +511,21 @@ if (submitted) {
   <h2 className="text-[#d4af37] text-2xl mb-6">
     Payment Details
   </h2>
-
-            <p className="text-white/70 mb-4">
-              Registration Fee: ₹750
-            </p>
-
-            <input
-              name="paymentReference"
-              placeholder="UTR / Transaction ID"
-              value={formData.paymentReference}
-              onChange={handleChange}
-              className="input luxury-input"
-              required
-            />
+<p className="text-white/70 mb-4">
+  <span className="block">Registration Fee: ₹750</span>
+  <span className="block mt-2">
+    Please confirm your registration fee payment by contacting us on{" "}
+    <a
+      href="https://wa.me/919787891949"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-[#d4af37] underline hover:text-yellow-300"
+    >
+      WhatsApp (+91 9787891949)
+    </a>.
+  </span>
+</p>
+            
           </motion.div>
 
           {/* DECLARATION */}

@@ -25,42 +25,49 @@ export default function TheCrownPage() {
           </p>
         </div>
       </section>
+{/* Crown Showcase */}
+<section className="py-12 md:py-16 px-6">
+  <div className="max-w-4xl mx-auto flex justify-center">
 
-      {/* Crown Showcase */}
-      <section className="py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <div className="relative aspect-square max-w-lg mx-auto">
-            {/* Outer glow ring */}
-            <div className="absolute inset-0 rounded-full border border-[#d4af37]/20 animate-pulse" />
-            <div className="absolute inset-4 rounded-full border border-[#d4af37]/30" />
-            <div className="absolute inset-8 rounded-full border border-[#d4af37]/40" />
-            
-            {/* Center crown */}
-            <div className="absolute inset-0 flex items-center justify-center">
-  <div className="relative">
-    <Image
-      src="/images/crown2.png"
-      alt="Crown"
-      width={350}
-      height={350}
-      className="w-[220px] md:w-[320px] h-auto object-contain"
-    />
+    <div className="relative w-[340px] h-[340px] md:w-[460px] md:h-[460px]">
 
-    <Sparkles className="absolute -top-4 -right-4 w-8 h-8 text-[#d4af37]/60" />
-    <Sparkles className="absolute -bottom-4 -left-4 w-6 h-6 text-[#d4af37]/40" />
-  </div>
-</div>
-            {/* Corner accents */}
-            <div className="absolute top-0 left-0 w-12 h-12 border-l-2 border-t-2 border-[#d4af37]/50" />
-            <div className="absolute top-0 right-0 w-12 h-12 border-r-2 border-t-2 border-[#d4af37]/50" />
-            <div className="absolute bottom-0 left-0 w-12 h-12 border-l-2 border-b-2 border-[#d4af37]/50" />
-            <div className="absolute bottom-0 right-0 w-12 h-12 border-r-2 border-b-2 border-[#d4af37]/50" />
-          </div>
+      {/* Outer Rings */}
+      <div className="absolute inset-0 rounded-full border border-[#d4af37]/20 animate-pulse" />
+      <div className="absolute inset-3 rounded-full border border-[#d4af37]/30" />
+      <div className="absolute inset-6 rounded-full border border-[#d4af37]/40" />
+
+      {/* Image */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="relative">
+
+          <Image
+            src="/images/crown2.png"
+            alt="Prince & Princess"
+            width={260}
+            height={260}
+            priority
+            className="w-[190px] md:w-[260px] h-auto object-contain"
+          />
+
+          {/* Sparkles */}
+          <Sparkles className="absolute -top-3 -right-3 w-6 h-6 md:w-8 md:h-8 text-[#d4af37]/60" />
+          <Sparkles className="absolute -bottom-3 -left-3 w-5 h-5 md:w-6 md:h-6 text-[#d4af37]/40" />
+
         </div>
-      </section>
+      </div>
 
+      {/* Corner Accents */}
+      <div className="absolute top-0 left-0 w-8 h-8 md:w-10 md:h-10 border-l-2 border-t-2 border-[#d4af37]/60" />
+      <div className="absolute top-0 right-0 w-8 h-8 md:w-10 md:h-10 border-r-2 border-t-2 border-[#d4af37]/60" />
+      <div className="absolute bottom-0 left-0 w-8 h-8 md:w-10 md:h-10 border-l-2 border-b-2 border-[#d4af37]/60" />
+      <div className="absolute bottom-0 right-0 w-8 h-8 md:w-10 md:h-10 border-r-2 border-b-2 border-[#d4af37]/60" />
+
+    </div>
+
+  </div>
+</section>
       {/* Crown Details */}
-      <section className="py-20 px-6 bg-gradient-to-b from-transparent via-[#d4af37]/5 to-transparent">
+      <section className="pt-6 pb-20 px-6 bg-gradient-to-b from-transparent via-[#d4af37]/5 to-transparent">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 

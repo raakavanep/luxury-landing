@@ -24,7 +24,7 @@ export default function OurTeamPage() {
             <img
   src="/images/raakavan.jpg"
   alt="Raakavan"
-  className="float-right ml-8 mb-6 w-[220px] md:w-[260px] rounded-lg border border-[#d4af37]/30"
+  className="float-right ml-8 mb-6 w-[240px] h-[320px] object-cover rounded-lg border border-[#d4af37]/30"
 />
 
             {/* Founder Details */}
@@ -88,6 +88,143 @@ export default function OurTeamPage() {
             </div>
 
             <div className="clear-both"></div>
+
+            <div className="mt-16 border-t border-[#d4af37]/20 pt-12">
+
+  <div className="relative">
+<img
+  src="/images/vignesh.jpeg"
+  alt="Vignesh"
+  className="float-right ml-8 mb-6 w-[240px] h-[320px] object-cover rounded-lg border border-[#d4af37]/30"
+/>
+
+    <p className="text-white/80 tracking-wider text-lg mb-2">
+      Line Producer | Cinematographer
+    </p>
+
+    <h2
+      className="text-[#d4af37] text-3xl md:text-4xl mb-8"
+      style={{ fontFamily: "serif" }}
+    >
+      Vignesh
+    </h2>
+
+    <div className="space-y-6 text-white/80 leading-8 text-justify">
+
+      <p>
+        With over 10 years of experience in the film industry, Vignesh
+        brings extensive expertise in cinematography, executive production,
+        and line production. Having worked predominantly in the Kannada film
+        industry, he has successfully managed and executed numerous film
+        projects with professionalism, precision, and creative excellence.
+      </p>
+
+      <p>
+        His strong production management skills, industry network, and
+        commitment to delivering quality cinema make him an invaluable
+        member of our team.
+      </p>
+
+    </div>
+
+    <div className="clear-both"></div>
+
+  </div>
+
+</div>
+
+<div className="mt-16 border-t border-[#d4af37]/20 pt-12">
+
+  <div className="relative">
+
+    <img
+  src="/images/barath-kumar.png"
+  alt="Barath Kumar"
+  className="float-right ml-8 mb-6 w-[240px] h-[320px] object-cover rounded-lg border border-[#d4af37]/30"
+/>
+
+    <p className="text-white/80 tracking-wider text-lg mb-2">
+      Line Producer | AI Video Creator
+    </p>
+
+    <h2
+      className="text-[#d4af37] text-3xl md:text-4xl mb-8"
+      style={{ fontFamily: "serif" }}
+    >
+      Barath Kumar
+    </h2>
+
+    <div className="space-y-6 text-white/80 leading-8 text-justify">
+
+      <p>
+        With over two decades of professional experience in the BPO
+        industry, Barath Kumar brings a wealth of expertise in leadership,
+        operations, and project management.
+      </p>
+
+      <p>
+        Expanding his career into the film industry as a Line Producer, he
+        combines strategic planning with efficient execution to support
+        seamless production workflows.
+      </p>
+
+      <p>
+        He is also highly skilled in AI-powered video creation, utilizing
+        the latest technologies to develop innovative and engaging visual
+        content. His unique combination of corporate excellence, creative
+        insight, and technological expertise makes him an invaluable member
+        of our team.
+      </p>
+
+    </div>
+
+    <div className="clear-both"></div>
+
+  </div>
+
+</div>
+<div className="mt-16 border-t border-[#d4af37]/20 pt-12">
+
+  <div className="relative">
+
+    <img
+      src="/images/radhi-studio.png"
+      alt="Radhi Studio Makeover"
+      className="float-right ml-8 mb-6 w-[240px] h-[320px] object-cover rounded-lg border border-[#d4af37]/30"
+    />
+
+    <p className="text-white/80 tracking-wider text-lg mb-2">
+      Professional Makeup & Makeover Studio
+    </p>
+
+    <h2
+      className="text-[#d4af37] text-3xl md:text-4xl mb-8"
+      style={{ fontFamily: "serif" }}
+    >
+      Radhi Studio Makeover
+    </h2>
+
+    <div className="space-y-6 text-white/80 leading-8 text-justify">
+
+      <p>
+        Radhi Studio Makeover is a trusted name in the beauty industry with
+        over a decade of expertise in professional makeup and complete
+        makeover services.
+      </p>
+
+      <p>
+        Backed by extensive experience in the film industry, the studio
+        specializes in creating flawless, camera-ready looks with
+        personalized styling, elegance, and perfection for every occasion.
+      </p>
+
+    </div>
+
+    <div className="clear-both"></div>
+
+  </div>
+
+</div>
 
           </div>
 
