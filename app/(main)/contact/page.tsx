@@ -13,7 +13,7 @@ import {
   Youtube,
 } from "lucide-react";
 import { FaXTwitter, FaThreads } from "react-icons/fa6";
-
+import { FaWhatsapp } from "react-icons/fa";
 
 
 export default function ContactPage() {
@@ -347,11 +347,22 @@ console.log("Sending:", formData);
       <Mail size={26} />
     </a>
 
+<a
+  href="https://wa.me/919787891949"
+  target="_blank"
+  rel="noopener noreferrer"
+  title="WhatsApp"
+>
+  <FaWhatsapp size={26} />
+</a>
+
   </div>
 
   <p className="text-white/50 text-sm mt-5 break-all">
     princeandprincessofsouthindia@gmail.com
   </p>
+
+  
 
 </div>
 
@@ -408,13 +419,7 @@ console.log("Sending:", formData);
 
   {/* Title */}
   <div className="text-center border-b border-[#d4af37]/20 pb-8">
-    <h2
-      className="text-4xl text-[#d4af37] mb-2"
-      style={{ fontFamily: "var(--font-cinzel), serif" }}
-    >
-      PPOSI 2026
-    </h2>
-
+    
     <p className="text-white text-xl">
       Prince & Princess of South India
     </p>
@@ -1180,30 +1185,7 @@ console.log("Sending:", formData);
 
 </div>
 
-{/* Important Note */}
 
-<div className="border-l-4 border-[#d4af37] bg-[#d4af37]/5 p-6 rounded-r-lg">
-
-  <h3
-    className="text-[#d4af37] text-2xl mb-4"
-    style={{ fontFamily: "var(--font-cinzel), serif" }}
-  >
-    Important Note
-  </h3>
-
-  <p>
-    Bracketed fields are placeholders. Please insert Craft &amp;
-    Frame Production's registered address, official contact email,
-    phone number, and website before publishing this Privacy Policy.
-  </p>
-
-  <p className="mt-5">
-    This Privacy Policy is a foundational document and should be
-    reviewed by legal counsel alongside the PPOSI 2026 Participant,
-    Sponsor, and Collaborator Agreements before publication.
-  </p>
-
-</div>
 </div>
 
 

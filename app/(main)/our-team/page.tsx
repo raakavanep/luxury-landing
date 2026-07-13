@@ -1,3 +1,4 @@
+import { Instagram, ExternalLink } from "lucide-react";
 export default function OurTeamPage() {
   return (
     <main className="min-h-screen bg-black text-white pt-32 pb-20 px-6">
@@ -84,7 +85,23 @@ export default function OurTeamPage() {
                 across film, literature, and live entertainment — one frame at a
                 time.
               </p>
+<div className="mt-8">
+  <p className="text-white/50 text-sm uppercase tracking-widest mb-3">
+    Follow on Instagram
+  </p>
 
+  <a
+    href="https://www.instagram.com/raakavanofficial?igsh=M3gxdjh1MXFnZThy"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-3 px-5 py-3 rounded-full border border-[#d4af37]
+    bg-[#111111] hover:bg-gradient-to-r hover:from-pink-500 hover:via-purple-500 hover:to-orange-400
+    text-[#d4af37] hover:text-white transition-all duration-300"
+  >
+    <Instagram size={20} />
+    <span>@raakavanofficial</span>
+  </a>
+</div>
             </div>
 
             <div className="clear-both"></div>
@@ -130,7 +147,24 @@ export default function OurTeamPage() {
     <div className="clear-both"></div>
 
   </div>
+<div className="mt-8">
+  <p className="text-white/50 text-sm uppercase tracking-widest mb-3">
+    Follow on Instagram
+  </p>
 
+  <a
+    href="https://www.instagram.com/vignesh_nagendranofficial?igsh=MTQydHl1dDNtMHV3Mw=="
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-3 px-5 py-3 rounded-full border border-[#d4af37] bg-[#111111]
+    hover:bg-gradient-to-r hover:from-pink-500 hover:via-purple-500 hover:to-orange-400
+    text-[#d4af37] hover:text-white transition-all duration-300 shadow-lg hover:scale-105"
+  >
+    <Instagram size={20} />
+    <span>@vignesh_nagendranofficial</span>
+    
+  </a>
+</div>
 </div>
 
 <div className="mt-16 border-t border-[#d4af37]/20 pt-12">
@@ -151,14 +185,14 @@ export default function OurTeamPage() {
       className="text-[#d4af37] text-3xl md:text-4xl mb-8"
       style={{ fontFamily: "serif" }}
     >
-      Barath Kumar
+      Barath J
     </h2>
 
     <div className="space-y-6 text-white/80 leading-8 text-justify">
 
       <p>
-        With over two decades of professional experience in the BPO
-        industry, Barath Kumar brings a wealth of expertise in leadership,
+        With over two decades of professional experience in the stock market
+        , Barath Kumar brings a wealth of expertise in leadership,
         operations, and project management.
       </p>
 
@@ -181,7 +215,24 @@ export default function OurTeamPage() {
     <div className="clear-both"></div>
 
   </div>
+<div className="mt-8">
+  <p className="text-white/50 text-sm uppercase tracking-widest mb-3">
+    Follow on Instagram
+  </p>
 
+  <a
+    href="https://www.instagram.com/barathj2120?igsh=MW5oZTZmZ3Bkd2ZkMw=="
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-3 px-5 py-3 rounded-full border border-[#d4af37] bg-[#111111]
+    hover:bg-gradient-to-r hover:from-pink-500 hover:via-purple-500 hover:to-orange-400
+    text-[#d4af37] hover:text-white transition-all duration-300 shadow-lg hover:scale-105"
+  >
+    <Instagram size={20} />
+    <span>@barathj2120</span>
+    
+  </a>
+</div>
 </div>
 <div className="mt-16 border-t border-[#d4af37]/20 pt-12">
 
@@ -189,35 +240,72 @@ export default function OurTeamPage() {
 
     <img
       src="/images/radhi-studio.png"
-      alt="Radhi Studio Makeover"
+      alt="Radhi Radhikha"
       className="float-right ml-8 mb-6 w-[240px] h-[320px] object-cover rounded-lg border border-[#d4af37]/30"
     />
 
     <p className="text-white/80 tracking-wider text-lg mb-2">
-      Professional Makeup & Makeover Studio
+      Beauty Head • Men's Stylist • Makeup Artist
     </p>
 
     <h2
-      className="text-[#d4af37] text-3xl md:text-4xl mb-8"
+      className="text-[#d4af37] text-3xl md:text-4xl mb-2"
       style={{ fontFamily: "serif" }}
     >
-      Radhi Studio Makeover
+      Radhi Radhikha
     </h2>
+
+    <p className="text-[#d4af37]/80 text-lg mb-8">
+      Radhis Bride & Groom Studio <br />
+      <span className="text-white/70">Since 1997</span>
+    </p>
 
     <div className="space-y-6 text-white/80 leading-8 text-justify">
 
       <p>
-        Radhi Studio Makeover is a trusted name in the beauty industry with
-        over a decade of expertise in professional makeup and complete
-        makeover services.
+        Chennai-based visual storyteller crafting unique, tailored looks for
+        the big screen. From character transformations to sharp, camera-ready
+        grooming for leading men, every look is designed with artistry,
+        precision, and attention to detail.
       </p>
 
-      <p>
-        Backed by extensive experience in the film industry, the studio
-        specializes in creating flawless, camera-ready looks with
-        personalized styling, elegance, and perfection for every occasion.
-      </p>
+      <div>
+        <h3 className="text-[#d4af37] text-xl mb-3">
+          Specializing in:
+        </h3>
 
+        <ul className="space-y-2 list-disc pl-6">
+          <li>
+            <strong>Film Character Makeup</strong> – Period, fantasy,
+            realistic aging, and prosthetics.
+          </li>
+          <li>
+            <strong>Men's Styling & Grooming</strong> – Bespoke looks that
+            define personality on screen.
+          </li>
+          <li>
+            <strong>Red Carpet & Editorial</strong> – High-definition ready,
+            no retakes needed.
+          </li>
+        </ul>
+      </div>
+<div className="mt-8">
+  <p className="text-white/50 text-sm uppercase tracking-widest mb-3">
+    Follow on Instagram
+  </p>
+
+  <a
+    href="https://www.instagram.com/radhiradhikha?igsh=MTliNTEycnNhMHk0Zw=="
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-3 px-5 py-3 rounded-full border border-[#d4af37] bg-[#111111]
+    hover:bg-gradient-to-r hover:from-pink-500 hover:via-purple-500 hover:to-orange-400
+    text-[#d4af37] hover:text-white transition-all duration-300 shadow-lg hover:scale-105"
+  >
+    <Instagram size={20} />
+    <span>@radhiradhikha</span>
+  </a>
+</div>
     </div>
 
     <div className="clear-both"></div>
@@ -274,7 +362,23 @@ export default function OurTeamPage() {
     </div>
 
   </div>
+<div className="mt-8">
+  <p className="text-white/50 text-sm uppercase tracking-widest mb-3">
+    Follow on Instagram
+  </p>
 
+  <a
+    href="https://www.instagram.com/72film_company_?igsh=enZ3NmRmZG00bzl2"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-3 px-5 py-3 rounded-full border border-[#d4af37] bg-[#111111]
+    hover:bg-gradient-to-r hover:from-pink-500 hover:via-purple-500 hover:to-orange-400
+    text-[#d4af37] hover:text-white transition-all duration-300 shadow-lg hover:scale-105"
+  >
+    <Instagram size={20} />
+    <span>@72film_company_</span>
+  </a>
+</div>
 </div>
 
 {/* ================= SPONSORS ================= */}
@@ -311,6 +415,19 @@ export default function OurTeamPage() {
         construction, making dream homes accessible without compromising
         on style or durability.
       </p>
+
+      <div className="mt-6">
+  <a
+    href="https://www.instagram.com/mahil_properties?igsh=cHN3eDl3d2J4Z3hx"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 text-[#d4af37] hover:text-white transition-all"
+  >
+    <Instagram size={18} />
+    @mahil_properties
+    
+  </a>
+</div>
     </div>
 
     {/* 7:10 FUTSAL */}
@@ -333,6 +450,18 @@ export default function OurTeamPage() {
         features a well-maintained artificial turf with floodlights,
         making it suitable for both daytime and late-night games.
       </p>
+
+      <div className="mt-6">
+  <a
+    href="https://www.instagram.com/_7_10_futsal_united?igsh=Mm1uNjNnYmhmZmps"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 text-[#d4af37] hover:text-white transition-all"
+  >
+    <Instagram size={18} />
+    @_7_10_futsal_united
+  </a>
+</div>
     </div>
 
     {/* Smiths */}
@@ -356,6 +485,17 @@ export default function OurTeamPage() {
         and occasion — making quality perfumery accessible to everyone
         in the city.
       </p>
+      <div className="mt-6">
+  <a
+    href="https://www.instagram.com/smithsparfumes?igsh=MTczaWV5NHp6N3k5aQ=="
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-2 text-[#d4af37] hover:text-white transition-all"
+  >
+    <Instagram size={18} />
+    @smithsparfumes
+  </a>
+</div>
     </div>
 
   </div>
